@@ -13,5 +13,10 @@
     "name": "grinning",
     "size": 1.5,
     "val": ":D"
+  },
+  {
+    "name": "grinninghug",
+    "size": 1.6,
+    "val": ">:D<"
   }
 ]
