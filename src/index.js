@@ -1,8 +1,7 @@
-// const uniqueRandomArray = require('unique-random-array');
-
+const lodash = require('lodash');
 const emoji = require('./emoji-data.json');
 
 module.exports = {
   all: emoji,
-  random: emoji[1]
+  random: () => lodash.sample(emoji),
 };

@@ -1,6 +1,6 @@
 {
   "name": "emojiify",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Emojiify - Transforms text into emojis",
   "keywords": [
     "emoji",
@@ -19,9 +19,13 @@
   "type": "commonjs",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w"
+  },
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^11.1.0"
   },
   "dependencies": {
-    "unique-random-array": "^4.0.0"
+    "lodash": "^4.17.21"
   }
 }
