@@ -1,0 +1,27 @@
+{
+  "name": "emojiify",
+  "version": "1.0.0",
+  "description": "Emojiify - Transforms text into emojis",
+  "keywords": [
+    "emoji",
+    "words"
+  ],
+  "homepage": "https://github.com/amzacatalin/emojiify#readme",
+  "bugs": {
+    "url": "https://github.com/amzacatalin/emojiify/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amzacatalin/emojiify.git"
+  },
+  "license": "MIT",
+  "author": "Amza Catalin <amzaionutcatalin@gmail.com> (https://amzacatalin.ro/)",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "unique-random-array": "^4.0.0"
+  }
+}
