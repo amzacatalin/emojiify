@@ -19,13 +19,20 @@
   "type": "commonjs",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "test": "mocha src/index.test.js -w",
+    "test:single": "mocha src/index.test.js"
   },
   "devDependencies": {
     "chai": "^5.1.2",
+    "ghooks": "^2.0.4",
     "mocha": "^11.1.0"
   },
   "dependencies": {
     "lodash": "^4.17.21"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test:single"
+    }
   }
 }
