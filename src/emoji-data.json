@@ -8,5 +8,10 @@
     "name": "laugh",
     "size": 3,
     "val": ":))"
+  },
+  {
+    "name": "grinning",
+    "size": 1.5,
+    "val": ":D"
   }
 ]
