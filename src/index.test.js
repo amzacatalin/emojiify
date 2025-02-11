@@ -14,4 +14,11 @@ describe('emojiify', () => {
     const item = emoji.random();
     expect(emoji.all).to.include(item);
   });
+
+  it('should return multiple random items', () => {
+    const itemsNr = 3;
+    const items = emoji.random(itemsNr);
+    items.forEach((item) => expect(emoji.all).to.include(item));
+    expect(items).to.have.lengthOf(itemsNr); 
+  });
 });
