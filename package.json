@@ -1,6 +1,6 @@
 {
   "name": "emojiify",
-  "version": "1.4.1",
+  "version": "1.5.2",
   "description": "Emojiify - Transforms text into emojis",
   "keywords": [
     "emoji",
@@ -27,8 +27,8 @@
     "build": "babel src/index.js -o dist/index.js",
     "postbuild": "cp src/emoji-data.json dist/emoji-data.json",
     "test": "mocha src/index.test.js -w",
-    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js",
-    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100"
+    "test:single": "nyc cover -x *.test.js _mocha -- -R spec src/index.test.js",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
