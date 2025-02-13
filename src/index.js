@@ -1,5 +1,6 @@
-const lodash = require('lodash');
-const emoji = require('./emoji-data.json');
+import lodash from 'lodash';
+
+import emoji from './emoji-data.json';
 
 const getRandomItem = () => lodash.sample(emoji);
 
@@ -14,7 +15,7 @@ const random = (number) => {
   return items;
 };
 
-module.exports = {
+export default {
   all: emoji,
   random,
 };
