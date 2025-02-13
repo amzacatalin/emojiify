@@ -15,7 +15,7 @@ const random = (number) => {
   return items;
 };
 
-export default {
+module.exports = {
   all: emoji,
   random,
 };
